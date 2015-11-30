@@ -4,7 +4,6 @@
 
 var passport = require('passport');
 var User = require('../models').model('User');
-
 module.exports = {
     deny : function(req, res) {
             res.sendStatus(405);
