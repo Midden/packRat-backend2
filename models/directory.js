@@ -35,22 +35,24 @@ s3.headBucket({Bucket:bucketFolder},function(err,data){
          console.log("Bucket exists and we have access");
      }
 }); */
-var directorySchema = new mongoose.Schema({
-  name: String,
-  timestamps: true,
+
+
+var mongoose = require('mongoose'),
+
+    Schema = mongoose.Schema;
+
+mongoose.connect('mongodb://localhost/materialized');
+
+var DirectorySchema = new Schema({
+  name: {type: String},
+   timestamps: true,
   toObject: { virtuals: true },
   toJSON: {virtuals: true},
   keywords: [{body:String}]
+
 });
 
-directorySchema.methods.createS3folder = function (err, directory, numAffected) {
-
-};
 
 
-
-//model person
-var Directory = mongoose.model('Directory', directorySchema);
-
-module.exports = Directory;
+module.exports = mongoose.model('File', DirectorySchema);
 
