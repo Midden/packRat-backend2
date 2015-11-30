@@ -68,3 +68,8 @@ userSchema.methods.setPassword = function(password) {
 };
 
 module.exports = userSchema;
+
+
+userSchema.methods.createS3folder = function() {
+//create s3 folder
+};
