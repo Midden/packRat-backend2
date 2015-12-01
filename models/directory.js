@@ -45,7 +45,10 @@ mongoose.connect('mongodb://localhost/materialized');
 
 var DirectorySchema = new Schema({
   name: {type: String},
-   timestamps: true,
+  postedBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+      },
   toObject: { virtuals: true },
   toJSON: {virtuals: true},
   keywords: [{body:String}]
@@ -54,5 +57,5 @@ var DirectorySchema = new Schema({
 
 
 
-module.exports = mongoose.model('File', DirectorySchema);
+module.exports = mongoose.model('Directory', DirectorySchema);
 
