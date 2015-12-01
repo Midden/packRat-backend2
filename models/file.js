@@ -3,14 +3,17 @@
 'use strict';
 
 var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost/file-upload');
-var Schema = mongoose.Schema;
+mongoose.connect('mongodb://localhost/file-upload');
 
-
-var FileSchema = new Schema({
-    title: String,
-    toObject: { virtuals: true },
-    toJSON: {virtuals: true},
-    timestamps: true
+var fileSchema = new mongoose.Schema({
+  name: String,
+  timestamps: true,
+  toObject: { virtuals: true },
+  toJSON: { virtuals: true },
+  keywords: [{ body: String }]
 });
+
+var File = mongoose.model('File', fileSchema);
+
+module.exports = File;
 
