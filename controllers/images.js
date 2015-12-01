@@ -5,6 +5,7 @@
 
 var Image = require('../models/image');
 var awsUpload = require('../lib/aws-upload');
+var fileUpload = require('../lib/file-upload');
 
 var index = function index(req, res, next) {
   Image.find({}, { __v: 0}).exec().then(function(images) {
@@ -24,6 +25,6 @@ var create = function create(req, res, next) {
   });
 };
 module.exports = {
-  index
+  index, create
 };
 
