@@ -4,8 +4,13 @@
 
 var mongoose = require('mongoose');
 var db = mongoose.connect('mongodb://localhost/file-upload');
+var Schema = mongoose.Schema;
 
 
-db.user.insert( { _id: "Directories", path: null } );
-db.user.insert( { _id: "Files", path: ",Directories," } );
+var FileSchema = new Schema({
+    title: String,
+    toObject: { virtuals: true },
+    toJSON: {virtuals: true},
+    timestamps: true
+});
 
