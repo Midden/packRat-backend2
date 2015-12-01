@@ -1,19 +1,26 @@
 //jshint node:true
 
+
 'use strict';
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/file-upload');
+var db = mongoose.connect('mongodb://localhost/file-upload');
 
 var fileSchema = new mongoose.Schema({
-  name: String,
-  timestamps: true,
-  toObject: { virtuals: true },
-  toJSON: { virtuals: true },
-  keywords: [{ body: String }]
+  url: {
+    type: String,
+    required: true
+  },
+  mime: {
+    type: String,
+    required: true
+  },
+  caption: {
+    type: String,
+    required: true
+  }
 });
 
 var File = mongoose.model('File', fileSchema);
 
 module.exports = File;
-
