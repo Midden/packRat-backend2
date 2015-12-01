@@ -104,5 +104,6 @@ db.once('open', function(){
      console.log("default");
    break;
  }
-
 });
+
+mongoose.users.insert({ _id: 'Files', path: ',Directories,'});
