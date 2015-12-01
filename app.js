@@ -9,6 +9,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var errorhandler = require('errorhandler');
+var filetype = require('file-type');
 
 var MongoStore = require('connect-mongo')(session);
 process.env.SESSION_SECRET || require('dotenv').load();
@@ -18,8 +19,8 @@ var passport = require('./lib/passport');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var directories = require('./routes/')
-// var images = require('./routes/images');
+var images = require('./routes/images');
+// var directories = require('./routes/')
 
 var app = express();
 
@@ -65,7 +66,7 @@ app.use(passport.session());
 
 app.use('/', routes);
 app.use('/users', users);
-// app.use('/images', image);
+app.use('/images', images);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -16,3 +16,4 @@ awsUpload(buffer, process.argv[3], function(err, data) {
   Image.db.close();
   console.log(data);
 });
+
