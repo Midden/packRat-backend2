@@ -18,6 +18,7 @@ var passport = require('./lib/passport');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var directories = require('./routes/')
 // var images = require('./routes/images');
 
 var app = express();

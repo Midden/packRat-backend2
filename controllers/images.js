@@ -1,14 +1,14 @@
-'use strict'
-
-// jshint node: true
+//don't forget .exec() returns a promise
+// { __v: 0} is a mongoose thing and if you don't put this in, it returns the json with this.
+//handling of route happens in here.
 'use strict';
 
-var File = require('../models/file');
+var Image = require('../models/image');
 var awsUpload = require('../lib/aws-upload');
 
 var index = function index(req, res, next) {
-  File.find({}, { __v: 0}).exec().then(function(files) {
-    res.json(files);
+  Image.find({}, { __v: 0}).exec().then(function(images) {
+    res.json(images);
   }).catch(function(error) {
     next(error);
   });
@@ -26,3 +26,4 @@ var create = function create(req, res, next) {
 module.exports = {
   index
 };
+

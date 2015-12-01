@@ -3,12 +3,9 @@
 // jshint node: true
 'use strict';
 
-var mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/mongoose-crud');
-var db = mongoose.connection;
 
-var Directory = require('./model/directory.js');
+
+var Directory = require('../models/directory.js');
 
 var done = function() {
   db.close();
@@ -118,7 +115,7 @@ db.once('open', function(){
 
 
 
-db:directories.update
+/*db:directories.update
 {name:""}
 {name: "new Name"} //this will overwrite everything but the collection id and new name
 db.directories.update(
@@ -134,4 +131,4 @@ db.directories.find(
   "files.some_tag" : "work"
 });
 
-db.directories.find({"user_id": {"$ne : current_user" : false}});
+db.directories.find({"user_id": {"$ne : current_user" : false}});*/
