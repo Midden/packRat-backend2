@@ -1,0 +1,1708 @@
+~ $ 
+~ $ 
+~ $ 
+~ $ 
+~ $ cd Documents/WDI/
+~/Documents/WDI $ ls
+Code School Slides		jquery-ajax-form-data-upload
+ColorMaster			jquery-ttt-client
+CrappyWebsite			js
+HTML				js-async-intro
+Midden				js-fundamentals-08
+Mortstore			js-objects-stack-warmup
+TAC				js-project-ttt
+TIC				js-separation-of-concerns
+TOE				mongodb-crud
+TTT				mongoose-crud
+TTTBasic			my-express-api
+UserExperience			myJournal
+ajax-get-08			myJournal_FrontEnd
+assesments			my_first_rails_app
+assessment			newplan.js
+assessment_review		node
+bower_components		node-express-controller-lesson
+dice				node-express-session-lesson
+eshimel				npm-debug.log
+express-generator-routes	nw-sample-apps
+express-multer			packRat-backend
+express-passport		rails
+express-response-handlers	rails-ttt-project-api
+express-standard-middleware	ruby
+front_end			ruby-objects-assessment
+group				site-stack
+html-css-overview		sql-crud-assessment
+http-intro-08			wdi-fundamentals-rps
+~/Documents/WDI $ ls -lrt
+total 32
+drwxr-xr-x  10 BuddySystem  staff   340 Sep 28 17:31 Mortstore
+drwxr-xr-x   4 BuddySystem  staff   136 Sep 29 09:29 ColorMaster
+drwxr-xr-x  13 BuddySystem  staff   442 Sep 29 11:35 wdi-fundamentals-rps
+drwxr-xr-x  10 BuddySystem  staff   340 Sep 29 13:42 js-fundamentals-08
+drwxr-xr-x  17 BuddySystem  staff   578 Oct  6 09:15 js-objects-stack-warmup
+drwxr-xr-x   3 BuddySystem  staff   102 Oct  6 11:57 UserExperience
+drwxr-xr-x   8 BuddySystem  staff   272 Oct  8 11:06 html-css-overview
+drwxr-xr-x   3 BuddySystem  staff   102 Oct  9 12:29 bower_components
+drwxr-xr-x  12 BuddySystem  staff   408 Oct 10 16:34 site-stack
+drwxr-xr-x  12 BuddySystem  staff   408 Oct 12 10:12 http-intro-08
+drwxr-xr-x  15 BuddySystem  staff   510 Oct 12 14:08 js-async-intro
+drwxr-xr-x  20 BuddySystem  staff   680 Oct 12 17:00 ajax-get-08
+drwxr-xr-x  22 BuddySystem  staff   748 Oct 13 09:59 rails-ttt-project-api
+drwxr-xr-x   8 BuddySystem  staff   272 Oct 13 13:58 jquery-ttt-client
+drwxr-xr-x   7 BuddySystem  staff   238 Oct 13 15:09 CrappyWebsite
+drwxr-xr-x  19 BuddySystem  staff   646 Oct 13 16:29 js-separation-of-concerns
+drwxr-xr-x   2 BuddySystem  staff    68 Oct 13 17:03 TOE
+drwxr-xr-x   2 BuddySystem  staff    68 Oct 13 17:03 TAC
+drwxr-xr-x   8 BuddySystem  staff   272 Oct 13 17:14 js-project-ttt
+drwxr-xr-x   9 BuddySystem  staff   306 Oct 14 11:07 HTML
+drwxr-xr-x   6 BuddySystem  staff   204 Oct 16 05:40 TTTBasic
+drwxr-xr-x   3 BuddySystem  staff   102 Oct 19 17:09 TTT
+drwxr-xr-x   5 BuddySystem  staff   170 Oct 21 16:53 TIC
+drwxr-xr-x   2 BuddySystem  staff    68 Oct 23 09:20 assessment
+drwxr-xr-x  12 BuddySystem  staff   408 Oct 23 09:20 ruby-objects-assessment
+drwxr-xr-x  18 BuddySystem  staff   612 Oct 26 11:34 my_first_rails_app
+drwxr-xr-x  11 BuddySystem  staff   374 Oct 28 11:19 sql-crud-assessment
+drwxr-xr-x   3 BuddySystem  staff   102 Oct 28 19:04 assessment_review
+drwxr-xr-x  23 BuddySystem  staff   782 Nov  2 13:02 ruby
+drwxr-xr-x   4 BuddySystem  staff   136 Nov  4 14:49 front_end
+drwxr-xr-x  12 BuddySystem  staff   408 Nov  6 10:03 rails
+drwxr-xr-x   4 BuddySystem  staff   136 Nov 16 10:34 group
+drwxr-xr-x  20 BuddySystem  staff   680 Nov 17 09:01 js
+drwxr-xr-x   8 BuddySystem  staff   272 Nov 18 09:10 mongodb-crud
+drwxr-xr-x  10 BuddySystem  staff   340 Nov 18 15:19 node
+drwxr-xr-x  19 BuddySystem  staff   646 Nov 19 09:04 assesments
+drwxr-xr-x   4 BuddySystem  staff   136 Nov 19 15:49 my-express-api
+drwxr-xr-x   5 BuddySystem  staff   170 Nov 20 10:11 express-response-handlers
+drwxr-xr-x  17 BuddySystem  staff   578 Nov 20 10:12 express-generator-routes
+drwxr-xr-x   9 BuddySystem  staff   306 Nov 20 10:38 node-express-controller-lesson
+drwxr-xr-x   6 BuddySystem  staff   204 Nov 23 09:26 express-standard-middleware
+-rw-r--r--   1 BuddySystem  staff  1220 Nov 23 11:26 npm-debug.log
+drwxr-xr-x  13 BuddySystem  staff   442 Nov 23 11:55 node-express-session-lesson
+drwxr-xr-x  13 BuddySystem  staff   442 Nov 23 14:39 express-passport
+drwxr-xr-x  11 BuddySystem  staff   374 Nov 24 10:36 dice
+drwxr-xr-x   8 BuddySystem  staff   272 Nov 24 15:39 jquery-ajax-form-data-upload
+drwxr-xr-x   3 BuddySystem  staff   102 Nov 27 14:46 myJournal_FrontEnd
+drwxr-xr-x   7 BuddySystem  staff   238 Nov 27 20:59 Code School Slides
+-rw-r--r--   1 BuddySystem  staff  9118 Nov 28 12:45 newplan.js
+drwxr-xr-x  22 BuddySystem  staff   748 Nov 30 11:34 eshimel
+drwxr-xr-x  21 BuddySystem  staff   714 Nov 30 13:12 packRat-backend
+drwxr-xr-x  14 BuddySystem  staff   476 Nov 30 16:04 nw-sample-apps
+drwxr-xr-x  15 BuddySystem  staff   510 Dec  1 09:14 mongoose-crud
+drwxr-xr-x  25 BuddySystem  staff   850 Dec  1 13:50 myJournal
+drwxr-xr-x  18 BuddySystem  staff   612 Dec  1 16:55 express-multer
+drwxr-xr-x   5 BuddySystem  staff   170 Dec  1 18:46 Midden
+~/Documents/WDI $ cd Midden/
+~/Documents/WDI/Midden $ ls
+packRat-backend2	packRat-frontend
+~/Documents/WDI/Midden $ 
+~/Documents/WDI/Midden $ 
+~/Documents/WDI/Midden $ 
+~/Documents/WDI/Midden $ 
+~/Documents/WDI/Midden $ 
+~/Documents/WDI/Midden $ cd packRat-backend2/
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/
+directory.js  file.js       image.js      index.js      user.js
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:59
+ 57 var Directory = mongoose.model('directory', directorySchema);
+ 58 
+>59 debugger;
+ 60 var newDirectory = new Directory();
+ 61 newDirectory.name = 'tom';
+debug> n
+break in models/directory.js:60
+ 58 
+ 59 debugger;
+>60 var newDirectory = new Directory();
+ 61 newDirectory.name = 'tom';
+ 62 newDirectory.createAWSdirectory();
+debug> n
+break in models/directory.js:61
+ 59 debugger;
+ 60 var newDirectory = new Directory();
+>61 newDirectory.name = 'tom';
+ 62 newDirectory.createAWSdirectory();
+ 63 
+debug> n
+break in models/directory.js:62
+ 60 var newDirectory = new Directory();
+ 61 newDirectory.name = 'tom';
+>62 newDirectory.createAWSdirectory();
+ 63 
+ 64 
+debug> newDirectory
+ReferenceError: newDirectory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> s
+break in models/directory.js:29
+ 27 
+ 28 directorySchema.methods.createAWSdirectory = function () {
+>29   var dName = this.name+"/";
+ 30   var params = {
+ 31     ACL: 'public-read',
+debug> this
+Commands: run (r), cont (c), next (n), step (s), out (o), backtrace (bt), setBreakpoint (sb), clearBreakpoint (cb),
+watch, unwatch, watchers, repl, restart, kill, list, scripts, breakOnException, breakpoints, version
+App is already running... Try `restart` instead
+App is already running... Try `restart` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:59
+ 57 var Directory = mongoose.model('directory', directorySchema);
+ 58 
+>59 debugger;
+ 60 var newDirectory = new Directory();
+ 61 newDirectory.name = 'tom';
+debug> n
+break in models/directory.js:60
+ 58 
+ 59 debugger;
+>60 var newDirectory = new Directory();
+ 61 newDirectory.name = 'tom';
+ 62 newDirectory.createAWSdirectory();
+debug> n
+break in models/directory.js:61
+ 59 debugger;
+ 60 var newDirectory = new Directory();
+>61 newDirectory.name = 'tom';
+ 62 newDirectory.createAWSdirectory();
+ 63 
+debug> newDirectory
+ReferenceError: newDirectory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> var x = new Directory();
+ReferenceError: Directory is not defined
+    at repl:1:13
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> n
+break in models/directory.js:62
+ 60 var newDirectory = new Directory();
+ 61 newDirectory.name = 'tom';
+>62 newDirectory.createAWSdirectory();
+ 63 
+ 64 
+debug> s
+break in models/directory.js:29
+ 27 
+ 28 directorySchema.methods.createAWSdirectory = function () {
+>29   var dName = this.name+"/";
+ 30   var params = {
+ 31     ACL: 'public-read',
+debug> n
+break in models/directory.js:30
+ 28 directorySchema.methods.createAWSdirectory = function () {
+ 29   var dName = this.name+"/";
+>30   var params = {
+ 31     ACL: 'public-read',
+ 32     Bucket: 'midden-wd-09',
+debug> dName
+ReferenceError: dName is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> o
+break in models/directory.js:65
+ 63 
+ 64 
+>65 module.exports = Directory;
+ 66 
+ 67 });
+debug> o
+break in module.js:435
+ 433   var args = [self.exports, require, self, filename, dirname];
+ 434   return compiledWrapper.apply(self.exports, args);
+>435 };
+ 436 
+ 437 
+debug> o
+break in module.js:453
+ 451   var content = fs.readFileSync(filename, 'utf8');
+ 452   module._compile(stripBOM(content), filename);
+>453 };
+ 454 
+ 455 
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+< /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:61
+< var newDirectory = new Directory(name: 'tom');
+<                                  ^^^^
+< SyntaxError: missing ) after argument list
+<     at exports.runInThisContext (vm.js:53:16)
+<     at Module._compile (module.js:413:25)
+<     at Object.Module._extensions..js (module.js:452:10)
+<     at Module.load (module.js:355:32)
+<     at Function.Module._load (module.js:310:12)
+<     at Module.runMain [as _onTimeout] (module.js:475:10)
+<     at Timer.listOnTimeout (timers.js:89:15)
+program terminated
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:60
+ 58 var Directory = mongoose.model('Directory', directorySchema);
+ 59 
+>60 debugger;
+ 61 var newDirectory = new Directory({ name: 'tom'});
+ 62 newDirectory.createAWSdirectory();
+debug> c
+break in models/directory.js:29
+ 27 
+ 28 directorySchema.methods.createAWSdirectory = function () {
+>29   debugger;
+ 30   var dName = this.name+"/";
+ 31   var params = {
+debug> this
+Commands: run (r), cont (c), next (n), step (s), out (o), backtrace (bt), setBreakpoint (sb), clearBreakpoint (cb),
+watch, unwatch, watchers, repl, restart, kill, list, scripts, breakOnException, breakpoints, version
+App is already running... Try `restart` instead
+App is already running... Try `restart` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:60
+ 58 var Directory = mongoose.model('Directory', directorySchema);
+ 59 
+>60 debugger;
+ 61 var newDirectory = new Directory({ name: 'tom'});
+ 62 newDirectory.createAWSdirectory();
+debug> n
+break in models/directory.js:61
+ 59 
+ 60 debugger;
+>61 var newDirectory = new Directory({ name: 'tom'});
+ 62 newDirectory.createAWSdirectory();
+ 63 
+debug> n
+break in models/directory.js:62
+ 60 debugger;
+ 61 var newDirectory = new Directory({ name: 'tom'});
+>62 newDirectory.createAWSdirectory();
+ 63 
+ 64 
+debug> newDirectory
+ReferenceError: newDirectory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> c
+break in models/directory.js:29
+ 27 
+ 28 directorySchema.methods.createAWSdirectory = function () {
+>29   debugger;
+ 30   var dName = this.name+"/";
+ 31   var params = {
+debug> n
+break in models/directory.js:30
+ 28 directorySchema.methods.createAWSdirectory = function () {
+ 29   debugger;
+>30   var dName = this.name+"/";
+ 31   var params = {
+ 32     ACL: 'public-read',
+debug> n
+break in models/directory.js:31
+ 29   debugger;
+ 30   var dName = this.name+"/";
+>31   var params = {
+ 32     ACL: 'public-read',
+ 33     Bucket: 'midden-wd-09',
+debug> n
+break in models/directory.js:38
+ 36   };
+ 37 
+>38    return new Promise(function(resolve, reject) {
+ 39     awsS3.upload(params, function(err, data) {
+ 40       console.log(data);
+debug> dName
+ReferenceError: dName is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> this
+Commands: run (r), cont (c), next (n), step (s), out (o), backtrace (bt), setBreakpoint (sb), clearBreakpoint (cb),
+watch, unwatch, watchers, repl, restart, kill, list, scripts, breakOnException, breakpoints, version
+App is already running... Try `restart` instead
+App is already running... Try `restart` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+App isn't running... Try `run` instead
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:61
+ 59 var Directory = mongoose.model('Directory', directorySchema);
+ 60 
+>61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+debug> n
+break in models/directory.js:62
+ 60 
+ 61 debugger;
+>62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+ 64 
+debug> n
+break in models/directory.js:63
+ 61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+>63 newDirectory.createAWSdirectory();
+ 64 
+ 65 
+debug> newDirectory
+ReferenceError: newDirectory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> c
+break in models/directory.js:30
+ 28 
+ 29 directorySchema.methods.createAWSdirectory = function () {
+>30   debugger;
+ 31   var dName = this.name+"/";
+ 32   var params = {
+debug> directorySchema
+ReferenceError: directorySchema is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> c
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:61
+ 59 var Directory = mongoose.model('Directory', directorySchema);
+ 60 
+>61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+debug> directorySchema
+ReferenceError: directorySchema is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> help
+Commands: run (r), cont (c), next (n), step (s), out (o), backtrace (bt), setBreakpoint (sb), clearBreakpoint (cb),
+watch, unwatch, watchers, repl, restart, kill, list, scripts, breakOnException, breakpoints, version
+debug> list
+[Function: bound ]
+debug> c
+break in models/directory.js:30
+ 28 
+ 29 directorySchema.methods.createAWSdirectory = function () {
+>30   debugger;
+ 31   var dName = this.name+"/";
+ 32   var params = {
+debug> c
+debug> c
+debug> c
+debug> 
+(^C again to quit)
+debug> 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> n
+break in models/directory.js:8
+  6 // var bucket = process.env.AWS_BUCKET ||
+  7 //  require('dotenv').load() && process.env.AWS_BUCKET;
+> 8 var util = require('util');
+  9 var crypto = require('crypto');
+ 10 var fs = require('fs');
+debug> n
+break in models/directory.js:9
+  7 //  require('dotenv').load() && process.env.AWS_BUCKET;
+  8 var util = require('util');
+> 9 var crypto = require('crypto');
+ 10 var fs = require('fs');
+ 11 var AWS = require('aws-sdk');
+debug> util
+{ format: [Function],
+  deprecate: [Function],
+  debuglog: [Function],
+  inspect: 
+   { [Function: inspect]
+     colors: 
+      { bold: [Object],
+        italic: [Object],
+        underline: [Object],
+        inverse: [Object],
+        white: [Object],
+        grey: [Object],
+        black: [Object],
+        blue: [Object],
+        cyan: [Object],
+        green: [Object],
+        magenta: [Object],
+        red: [Object],
+        yellow: [Object] },
+     styles: 
+      { special: 'cyan',
+        number: 'yellow',
+        boolean: 'yellow',
+        undefined: 'grey',
+        null: 'bold',
+        string: 'green',
+        symbol: 'green',
+        date: 'magenta',
+        regexp: 'red' } },
+  isArray: [Function: isArray],
+  isBoolean: [Function: isBoolean],
+  isNull: [Function: isNull],
+  isNullOrUndefined: [Function: isNullOrUndefined],
+  isNumber: [Function: isNumber],
+  isString: [Function: isString],
+  isSymbol: [Function: isSymbol],
+  isUndefined: [Function: isUndefined],
+  isRegExp: [Function: isRegExp],
+  isObject: [Function: isObject],
+  isDate: [Function: isDate],
+  isError: [Function: isError],
+  isFunction: [Function: isFunction],
+  isPrimitive: [Function: isPrimitive],
+  isBuffer: [Function: isBuffer],
+  log: [Function],
+  inherits: [Function],
+  _extend: [Function],
+  p: [Function: deprecated],
+  exec: [Function: deprecated],
+  print: [Function: deprecated],
+  puts: [Function: deprecated],
+  debug: [Function: deprecated],
+  error: [Function: deprecated],
+  pump: [Function: deprecated],
+  _errnoException: [Function],
+  _exceptionWithHostPort: [Function] }
+debug> n
+break in models/directory.js:10
+  8 var util = require('util');
+  9 var crypto = require('crypto');
+>10 var fs = require('fs');
+ 11 var AWS = require('aws-sdk');
+ 12 var getFileType = require('file-type');
+debug> n
+break in models/directory.js:11
+  9 var crypto = require('crypto');
+ 10 var fs = require('fs');
+>11 var AWS = require('aws-sdk');
+ 12 var getFileType = require('file-type');
+ 13 
+debug> n
+break in models/directory.js:12
+ 10 var fs = require('fs');
+ 11 var AWS = require('aws-sdk');
+>12 var getFileType = require('file-type');
+ 13 
+ 14 var mongoose = require('mongoose');
+debug> AWS
+ReferenceError: AWS is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> fs
+{ Stats: [Function],
+  F_OK: 0,
+  R_OK: 4,
+  W_OK: 2,
+  X_OK: 1,
+  access: [Function],
+  accessSync: [Function],
+  exists: [Function],
+  existsSync: [Function],
+  readFile: [Function],
+  readFileSync: [Function],
+  close: [Function],
+  closeSync: [Function],
+  open: [Function],
+  openSync: [Function],
+  read: [Function],
+  readSync: [Function],
+  write: [Function],
+  writeSync: [Function],
+  rename: [Function],
+  renameSync: [Function],
+  truncate: [Function],
+  truncateSync: [Function],
+  ftruncate: [Function],
+  ftruncateSync: [Function],
+  rmdir: [Function],
+  rmdirSync: [Function],
+  fdatasync: [Function],
+  fdatasyncSync: [Function],
+  fsync: [Function],
+  fsyncSync: [Function],
+  mkdir: [Function],
+  mkdirSync: [Function],
+  readdir: [Function],
+  readdirSync: [Function],
+  fstat: [Function],
+  lstat: [Function],
+  stat: [Function],
+  fstatSync: [Function],
+  lstatSync: [Function],
+  statSync: [Function],
+  readlink: [Function],
+  readlinkSync: [Function],
+  symlink: [Function],
+  symlinkSync: [Function],
+  link: [Function],
+  linkSync: [Function],
+  unlink: [Function],
+  unlinkSync: [Function],
+  fchmod: [Function],
+  fchmodSync: [Function],
+  lchmod: [Function],
+  lchmodSync: [Function],
+  chmod: [Function],
+  chmodSync: [Function],
+  lchown: [Function],
+  lchownSync: [Function],
+  fchown: [Function],
+  fchownSync: [Function],
+  chown: [Function],
+  chownSync: [Function],
+  _toUnixTimestamp: [Function: toUnixTimestamp],
+  utimes: [Function],
+  utimesSync: [Function],
+  futimes: [Function],
+  futimesSync: [Function],
+  writeFile: [Function],
+  writeFileSync: [Function],
+  appendFile: [Function],
+  appendFileSync: [Function],
+  watch: [Function],
+  watchFile: [Function],
+  unwatchFile: [Function],
+  realpathSync: [Function: realpathSync],
+  realpath: [Function: realpath],
+  createReadStream: [Function],
+  ReadStream: 
+   { [Function: ReadStream]
+     super_: 
+      { [Function: Readable]
+        ReadableState: [Function: ReadableState],
+        super_: [Object],
+        _fromList: [Function: fromList] } },
+  FileReadStream: 
+   { [Function: ReadStream]
+     super_: 
+      { [Function: Readable]
+        ReadableState: [Function: ReadableState],
+        super_: [Object],
+        _fromList: [Function: fromList] } },
+  createWriteStream: [Function],
+  WriteStream: 
+   { [Function: WriteStream]
+     super_: { [Function: Writable] WritableState: [Function: WritableState], super_: [Object] } },
+  FileWriteStream: 
+   { [Function: WriteStream]
+     super_: { [Function: Writable] WritableState: [Function: WritableState], super_: [Object] } } }
+debug> n
+break in models/directory.js:14
+ 12 var getFileType = require('file-type');
+ 13 
+>14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/directory');
+ 16 
+debug> n
+break in models/directory.js:61
+ 59 var Directory = mongoose.model('Directory', directorySchema);
+ 60 
+>61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> n
+break in models/directory.js:62
+ 60 
+ 61 debugger;
+>62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+ 64 
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:61
+ 59 var Directory = mongoose.model('Directory', directorySchema);
+ 60 
+>61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+debug> n
+break in models/directory.js:62
+ 60 
+ 61 debugger;
+>62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+ 64 
+debug> n
+break in models/directory.js:63
+ 61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+>63 newDirectory.createAWSdirectory();
+ 64 
+ 65 
+debug> util
+{ format: [Function],
+  deprecate: [Function],
+  debuglog: [Function],
+  inspect: 
+   { [Function: inspect]
+     colors: 
+      { bold: [Object],
+        italic: [Object],
+        underline: [Object],
+        inverse: [Object],
+        white: [Object],
+        grey: [Object],
+        black: [Object],
+        blue: [Object],
+        cyan: [Object],
+        green: [Object],
+        magenta: [Object],
+        red: [Object],
+        yellow: [Object] },
+     styles: 
+      { special: 'cyan',
+        number: 'yellow',
+        boolean: 'yellow',
+        undefined: 'grey',
+        null: 'bold',
+        string: 'green',
+        symbol: 'green',
+        date: 'magenta',
+        regexp: 'red' } },
+  isArray: [Function: isArray],
+  isBoolean: [Function: isBoolean],
+  isNull: [Function: isNull],
+  isNullOrUndefined: [Function: isNullOrUndefined],
+  isNumber: [Function: isNumber],
+  isString: [Function: isString],
+  isSymbol: [Function: isSymbol],
+  isUndefined: [Function: isUndefined],
+  isRegExp: [Function: isRegExp],
+  isObject: [Function: isObject],
+  isDate: [Function: isDate],
+  isError: [Function: isError],
+  isFunction: [Function: isFunction],
+  isPrimitive: [Function: isPrimitive],
+  isBuffer: [Function: isBuffer],
+  log: [Function],
+  inherits: [Function],
+  _extend: [Function],
+  p: [Function: deprecated],
+  exec: [Function: deprecated],
+  print: [Function: deprecated],
+  puts: [Function: deprecated],
+  debug: [Function: deprecated],
+  error: [Function: deprecated],
+  pump: [Function: deprecated],
+  _errnoException: [Function],
+  _exceptionWithHostPort: [Function] }
+debug> n
+break in module.js:313
+ 311     hadException = false;
+ 312   } finally {
+>313     if (hadException) {
+ 314       delete Module._cache[filename];
+ 315     }
+debug> c
+< /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:63
+< newDirectory.createAWSdirectory();
+<              ^
+< TypeError: newDirectory.createAWSdirectory is not a function
+<     at Object.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:63:14)
+<     at Module._compile (module.js:434:26)
+<     at Object.Module._extensions..js (module.js:452:10)
+<     at Module.load (module.js:355:32)
+<     at Function.Module._load (module.js:310:12)
+<     at Module.runMain [as _onTimeout] (module.js:475:10)
+<     at Timer.listOnTimeout (timers.js:89:15)
+program terminated
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:61
+ 59 var Directory = mongoose.model('Directory', directorySchema);
+ 60 
+>61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+debug> n
+break in models/directory.js:62
+ 60 
+ 61 debugger;
+>62 var newDirectory = new Directory({ name: 'tom'});
+ 63 newDirectory.createAWSdirectory();
+ 64 
+debug> n
+break in models/directory.js:63
+ 61 debugger;
+ 62 var newDirectory = new Directory({ name: 'tom'});
+>63 newDirectory.createAWSdirectory();
+ 64 
+ 65 
+debug> newDirectory
+ReferenceError: newDirectory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> n
+break in models/directory.js:8
+  6 // var bucket = process.env.AWS_BUCKET ||
+  7 //  require('dotenv').load() && process.env.AWS_BUCKET;
+> 8 var util = require('util');
+  9 //var crypto = require('crypto');
+ 10 //var fs = require('fs');
+debug> n
+break in models/directory.js:14
+ 12 //var getFileType = require('file-type');
+ 13 
+>14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/directory');
+ 16 
+debug> n
+break in models/directory.js:51
+ 49 var Directory = mongoose.model('Directory', directorySchema);
+ 50 
+>51 debugger;
+ 52 var newDirectory = new Directory({ name: 'tom'});
+ 53 newDirectory.createAWSdirectory();
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> require('mongoose');
+Mongoose {
+  connections: 
+   [ NativeConnection {
+       base: [Circular],
+       collections: {},
+       models: {},
+       config: [Object],
+       replica: false,
+       hosts: null,
+       host: null,
+       port: null,
+       user: null,
+       pass: null,
+       name: null,
+       options: null,
+       otherDbs: [],
+       _readyState: 0,
+       _closeCalled: false,
+       _hasOpened: false,
+       _listening: false } ],
+  plugins: [],
+  models: {},
+  modelSchemas: {},
+  options: { pluralization: true } }
+debug> var mongoose = require('mongoose');
+debug> mongoose
+Mongoose {
+  connections: 
+   [ NativeConnection {
+       base: [Circular],
+       collections: {},
+       models: {},
+       config: [Object],
+       replica: false,
+       hosts: null,
+       host: null,
+       port: null,
+       user: null,
+       pass: null,
+       name: null,
+       options: null,
+       otherDbs: [],
+       _readyState: 0,
+       _closeCalled: false,
+       _hasOpened: false,
+       _listening: false } ],
+  plugins: [],
+  models: {},
+  modelSchemas: {},
+  options: { pluralization: true } }
+debug> n
+break in models/directory.js:52
+ 50 
+ 51 debugger;
+>52 var newDirectory = new Directory({ name: 'tom'});
+ 53 newDirectory.createAWSdirectory();
+ 54 
+debug> s
+break in node_modules/mongoose/lib/model.js:2930
+ 2928   // generate new class
+ 2929   function model(doc, fields, skipId) {
+>2930     if (!(this instanceof model))
+ 2931       return new model(doc, fields, skipId);
+ 2932     Model.call(this, doc, fields, skipId);
+debug> n
+break in node_modules/mongoose/lib/model.js:2932
+ 2930     if (!(this instanceof model))
+ 2931       return new model(doc, fields, skipId);
+>2932     Model.call(this, doc, fields, skipId);
+ 2933   }
+ 2934 
+debug> n
+break in node_modules/mongoose/lib/model.js:2933
+ 2931       return new model(doc, fields, skipId);
+ 2932     Model.call(this, doc, fields, skipId);
+>2933   }
+ 2934 
+ 2935   model.hooks = schema.s.hooks.clone();
+debug> n
+break in models/directory.js:53
+ 51 debugger;
+ 52 var newDirectory = new Directory({ name: 'tom'});
+>53 newDirectory.createAWSdirectory();
+ 54 
+ 55 
+debug> newDirectory
+ReferenceError: newDirectory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> new Directory();
+ReferenceError: Directory is not defined
+    at repl:1:5
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> Directory
+ReferenceError: Directory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> c
+< /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:53
+< newDirectory.createAWSdirectory();
+<              ^
+< TypeError: newDirectory.createAWSdirectory is not a function
+<     at Object.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:53:14)
+<     at Module._compile (module.js:434:26)
+<     at Object.Module._extensions..js (module.js:452:10)
+<     at Module.load (module.js:355:32)
+<     at Function.Module._load (module.js:310:12)
+<     at Module.runMain [as _onTimeout] (module.js:475:10)
+<     at Timer.listOnTimeout (timers.js:89:15)
+program terminated
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:51
+ 49 var directory = mongoose.model('Directory', directorySchema);
+ 50 
+>51 debugger;
+ 52 var newDirectory = new Directory({ name: 'tom'});
+ 53 newDirectory.createAWSdirectory();
+debug> directory
+ReferenceError: directory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/direc ory.js 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:51
+ 49 var directory = mongoose.model('directory', directorySchema);
+ 50 
+>51 debugger;
+ 52 var newDirectory = new Directory({ name: 'tom'});
+ 53 newDirectory.createAWSdirectory();
+debug> directory
+ReferenceError: directory is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> directorySchema
+ReferenceError: directorySchema is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> n
+break in models/directory.js:8
+  6 // var bucket = process.env.AWS_BUCKET ||
+  7 //  require('dotenv').load() && process.env.AWS_BUCKET;
+> 8 var util = require('util');
+  9 //var crypto = require('crypto');
+ 10 //var fs = require('fs');
+debug> n
+break in models/directory.js:14
+ 12 //var getFileType = require('file-type');
+ 13 
+>14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/directory');
+ 16 
+debug> n
+break in models/directory.js:51
+ 49 var directory = mongoose.model('directory', directorySchema);
+ 50 
+>51 debugger;
+ 52 var newDirectory = new Directory({ name: 'tom'});
+ 53 newDirectory.createAWSdirectory();
+debug> directorySchema
+ReferenceError: directorySchema is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> c
+< /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:52
+< var newDirectory = new Directory({ name: 'tom'});
+<                        ^
+< ReferenceError: Directory is not defined
+<     at Object.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:52:24)
+<     at Module._compile (module.js:434:26)
+<     at Object.Module._extensions..js (module.js:452:10)
+<     at Module.load (module.js:355:32)
+<     at Function.Module._load (module.js:310:12)
+<     at Module.runMain [as _onTimeout] (module.js:475:10)
+<     at Timer.listOnTimeout (timers.js:89:15)
+program terminated
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:16
+ 14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/directory');
+>16 debugger;
+ 17 var directorySchema = new mongoose.Schema({name: String});
+ 18 
+debug> db
+ReferenceError: db is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> var foo;
+debug> foo
+debug> var foo = 'dkjfdk'
+debug> foo
+'dkjfdk'
+debug> n
+break in models/directory.js:17
+ 15 var db = mongoose.connect('mongodb://localhost/directory');
+ 16 debugger;
+>17 var directorySchema = new mongoose.Schema({name: String});
+ 18 
+ 19 // directorySchema.methods.createAWSdirectory = function () {
+debug> db
+ReferenceError: db is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> 
+debug> 
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+break in models/directory.js:16
+ 14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/file-upload');
+>16 debugger;
+ 17 var directorySchema = new mongoose.Schema({name: String});
+ 18 
+debug> db
+ReferenceError: db is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> c
+break in models/directory.js:51
+ 49 var directory = mongoose.model('directory', directorySchema);
+ 50 
+>51 debugger;
+ 52 var newDirectory = new Directory({ name: 'tom'});
+ 53 newDirectory.createAWSdirectory();
+debug> 
+debug> 
+debug> 
+debug> 
+debug> 
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> n
+break in models/directory.js:8
+  6 // var bucket = process.env.AWS_BUCKET ||
+  7 //  require('dotenv').load() && process.env.AWS_BUCKET;
+> 8 var util = require('util');
+  9 //var crypto = require('crypto');
+ 10 //var fs = require('fs');
+debug> n
+break in models/directory.js:14
+ 12 //var getFileType = require('file-type');
+ 13 
+>14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/file-upload');
+ 16 debugger;
+debug> n
+break in models/directory.js:16
+ 14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/file-upload');
+>16 debugger;
+ 17 var directorySchema = new mongoose.Schema({name: String});
+ 18 
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> util
+{ format: [Function],
+  deprecate: [Function],
+  debuglog: [Function],
+  inspect: 
+   { [Function: inspect]
+     colors: 
+      { bold: [Object],
+        italic: [Object],
+        underline: [Object],
+        inverse: [Object],
+        white: [Object],
+        grey: [Object],
+        black: [Object],
+        blue: [Object],
+        cyan: [Object],
+        green: [Object],
+        magenta: [Object],
+        red: [Object],
+        yellow: [Object] },
+     styles: 
+      { special: 'cyan',
+        number: 'yellow',
+        boolean: 'yellow',
+        undefined: 'grey',
+        null: 'bold',
+        string: 'green',
+        symbol: 'green',
+        date: 'magenta',
+        regexp: 'red' } },
+  isArray: [Function: isArray],
+  isBoolean: [Function: isBoolean],
+  isNull: [Function: isNull],
+  isNullOrUndefined: [Function: isNullOrUndefined],
+  isNumber: [Function: isNumber],
+  isString: [Function: isString],
+  isSymbol: [Function: isSymbol],
+  isUndefined: [Function: isUndefined],
+  isRegExp: [Function: isRegExp],
+  isObject: [Function: isObject],
+  isDate: [Function: isDate],
+  isError: [Function: isError],
+  isFunction: [Function: isFunction],
+  isPrimitive: [Function: isPrimitive],
+  isBuffer: [Function: isBuffer],
+  log: [Function],
+  inherits: [Function],
+  _extend: [Function],
+  p: [Function: deprecated],
+  exec: [Function: deprecated],
+  print: [Function: deprecated],
+  puts: [Function: deprecated],
+  debug: [Function: deprecated],
+  error: [Function: deprecated],
+  pump: [Function: deprecated],
+  _errnoException: [Function],
+  _exceptionWithHostPort: [Function] }
+debug> 
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> n
+break in models/directory.js:8
+  6 // var bucket = process.env.AWS_BUCKET ||
+  7 //  require('dotenv').load() && process.env.AWS_BUCKET;
+> 8 var util = require('util');
+  9 //var crypto = require('crypto');
+ 10 //var fs = require('fs');
+debug> n
+break in models/directory.js:14
+ 12 //var getFileType = require('file-type');
+ 13 
+>14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/file-upload');
+ 16 debugger;
+debug> n
+break in models/directory.js:16
+ 14 var mongoose = require('mongoose');
+ 15 var db = mongoose.connect('mongodb://localhost/file-upload');
+>16 debugger;
+ 17 var directorySchema = new mongoose.Schema({name: String});
+ 18 
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> c
+break in models/directory.js:51
+ 49 var directory = mongoose.model('directory', directorySchema);
+ 50 
+>51 debugger;
+ 52 var newDirectory = new Directory({ name: 'tom'});
+ 53 newDirectory.createAWSdirectory();
+debug> c
+< /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:52
+< var newDirectory = new Directory({ name: 'tom'});
+<                        ^
+< ReferenceError: Directory is not defined
+<     at Object.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:52:24)
+<     at Module._compile (module.js:434:26)
+<     at Object.Module._extensions..js (module.js:452:10)
+<     at Module.load (module.js:355:32)
+<     at Function.Module._load (module.js:310:12)
+<     at Module.runMain [as _onTimeout] (module.js:475:10)
+<     at Timer.listOnTimeout (timers.js:89:15)
+program terminated
+debug> c
+App isn't running... Try `run` instead
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/file.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/file.js:4
+  2 
+  3 
+> 4 'use strict';
+  5 
+  6 var mongoose = require('mongoose');
+debug> n
+break in models/file.js:6
+  4 'use strict';
+  5 
+> 6 var mongoose = require('mongoose');
+  7 var db = mongoose.connect('mongodb://localhost/file-upload');
+  8 debugger;
+debug> n
+break in models/file.js:8
+  6 var mongoose = require('mongoose');
+  7 var db = mongoose.connect('mongodb://localhost/file-upload');
+> 8 debugger;
+  9 var fileSchema = new mongoose.Schema({
+ 10   url: {
+debug> mongoose
+ReferenceError: mongoose is not defined
+    at repl:1:1
+    at Object.exports.runInContext (vm.js:44:17)
+    at Interface.controlEval (_debugger.js:952:21)
+    at bound (domain.js:250:14)
+    at REPLServer.runBound [as eval] (domain.js:263:12)
+    at REPLServer.<anonymous> (repl.js:393:12)
+    at emitOne (events.js:77:13)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+debug> next
+break in models/file.js:9
+  7 var db = mongoose.connect('mongodb://localhost/file-upload');
+  8 debugger;
+> 9 var fileSchema = new mongoose.Schema({
+ 10   url: {
+ 11     type: String,
+debug> n
+break in models/file.js:24
+ 22 });
+ 23 
+>24 var File = mongoose.model('File', fileSchema);
+ 25 
+ 26 module.exports = File;
+debug> c
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node debug models/directory.js 
+< Debugger listening on port 5858
+debug> . ok
+break in models/directory.js:2
+  1 
+> 2 'use strict';
+  3 //var bucket = process.env.AWS_BUCKET ||
+  4  //require('dotenv').load() && process.env.AWS_BUCKET;
+debug> c
+debug> ~/Documents/WDI/Midden/packRat-backend2 (models)$ logout
+
+[Process completed]
+
