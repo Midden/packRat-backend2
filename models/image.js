@@ -9,15 +9,13 @@ var imageSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  mime: {
+  path: {
     type: String,
     required: true
   },
-  caption: {
-    type: String,
-    required: true
-  }
+
 });
+
 
 var Image = mongoose.model('Image', imageSchema);
 

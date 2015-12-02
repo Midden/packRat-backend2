@@ -11,16 +11,19 @@ var fileSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  mime: {
-    type: String,
-    required: true
-  },
-  caption: {
+  path: {
     type: String,
     required: true
   }
 });
 
 var File = mongoose.model('File', fileSchema);
+
+File.find({}), function(err, files) {
+  if(!err) {
+    console.log(files);
+  }
+};
+
 
 module.exports = File;
