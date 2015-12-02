@@ -1,10 +1,10 @@
 //jshint node:true
 'use strict';
 
-var fileUpload = require('./lib/file-upload.js');
+var fileUpload = require('../lib/file-upload.js');
 
 var fs = require('fs');
-var Image = require('./models/image.js');
+var Image = require('../models/image.js');
 
 var done = function() {
   Image.db.close();
