@@ -3,12 +3,10 @@
 //handling of route happens in here.
 'use strict';
 
-var Image = require('../models/image');
-var awsUpload = require('../lib/aws-upload');
-var fileUpload = require('../lib/file-upload');
+var Image = require('../models/image.js');
 
 var index = function index(req, res, next) {
-  Image.find({}, { __v: 0}).exec().then(function(images) {
+  Image.find({}, {__v: 0}).exec().then(function(images) {
     res.json(images);
   }).catch(function(error) {
     next(error);
@@ -16,15 +14,10 @@ var index = function index(req, res, next) {
 };
 
 var create = function create(req, res, next) {
-
-  awsUpload(req.file.buffer, req.body.caption).then(function(data){
-     res.json(data);
-     }).catch(function(error){
-    next(error);
-
-  });
+  res.json({body: req.body, file: req.file});
 };
+
 module.exports = {
-  index, create
+  index,
+  create
 };
-

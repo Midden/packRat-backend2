@@ -1,3 +1,7 @@
+var db = require('./lib/db');
+
+var util = require('util');
+
 var express = require('express');
 var mongoose = require('mongoose');
 var path = require('path');
@@ -28,19 +32,28 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+//For file upload
+var uploadBaseUrl = function (req) {
+  return util.format('%s://%s:%s/images',
+    req.protocol,
+    req.hostname,
+    app.get ('port'));
+};
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
 app.use(cors({
   origin: ['http://localhost:5000'],
   credentials: true
 }));
-app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cookieParser('secret'));
-// app.use(cookieSession());
-app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/', require('./routes/root'));
+app.use('/images', require('./routes/images'));
+
+app.use(express.static(path.join(__dirname, 'public'), { index: false }));
 app.use(session({
   secret : process.env.SESSION_SECRET,
   resave : false,
