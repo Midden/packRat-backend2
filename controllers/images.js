@@ -6,9 +6,10 @@
 var Image = require('../models/image');
 var awsUpload = require('../lib/aws-upload');
 var fileUpload = require('../lib/file-upload');
-
+var User = require('../controllers/auth.js');
 var index = function index(req, res, next) {
-  Image.find({}, {__v: 0}).exec().then(function(images) {
+
+    Image.find({}, {__v: 0}).exec().then(function(images) {
     res.json(images);
   }).catch(function(error) {
     next(error);
@@ -16,7 +17,8 @@ var index = function index(req, res, next) {
 };
 
 var create = function create(req, res, next) {
-  awsUpload(req.file.buffer, {path: 'path', ownerId: req.user.id}).then(function(data){
+  console.log("req.session: ===========", req.session);
+  awsUpload(req.file.buffer, {path: 'path', ownerId: req.user._id}).then(function(data){
     res.json(data);
   }).catch(function(error) {
     next(error);

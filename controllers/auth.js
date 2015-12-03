@@ -18,7 +18,10 @@ module.exports = {
     login : {
         post : passport.authenticate('local'),
         all : function(req, res) {
+
             res.sendStatus(200);
+
+
         }
     },
     logout : {

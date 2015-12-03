@@ -3,7 +3,7 @@
 'use strict';
 
 var mongoose = require('mongoose');
-var ownerId = mongoose.Schema.Types.ObjectId;
+var OwnerId = mongoose.Schema.Types.ObjectId;
 var imageSchema = new mongoose.Schema({
   url: {
     type: String,
@@ -14,7 +14,7 @@ var imageSchema = new mongoose.Schema({
     required: true
   },
   ownerId: {
-    type: ownerId,
+    type: OwnerId,
     ref: "User"
   }
 

@@ -50,10 +50,8 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/', require('./routes/root'));
-app.use('/images', require('./routes/images'));
 
-app.use(express.static(path.join(__dirname, 'public'), { index: false }));
+//app.use(express.static(path.join(__dirname, 'public'), { index: false }));
 app.use(session({
   secret : process.env.SESSION_SECRET,
   resave : false,
@@ -77,6 +75,9 @@ app.use(passport.initialize());
 // mount return value of `passport.session` invocation on `app`
 app.use(passport.session());
 
+
+//app.use('/', require('./routes/root'));
+//app.use('/images', require('./routes/images'));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/images', images);
@@ -95,7 +96,7 @@ app.use(function(req, res, next) {
 if (true || app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
+    res.json('error', {
       message: err.message,
       error: err
     });
