@@ -16,10 +16,15 @@ var index = function index(req, res, next) {
 };
 
 var create = function create(req, res, next) {
-  res.json({body: req.body, file: req.file});
+  awsUpload(req.file.buffer, {path: 'path', ownerId: req.user.id}).then(function(data){
+    res.json(data);
+  }).catch(function(error) {
+    next(error);
+  });
 };
 
 module.exports = {
   index,
   create
 };
+
