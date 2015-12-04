@@ -16,8 +16,10 @@ var imageSchema = new mongoose.Schema({
   ownerId: {
     type: OwnerId,
     ref: "User"
+  },
+  name: {
+    type: String
   }
-
 });
 
 

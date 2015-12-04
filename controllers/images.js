@@ -17,8 +17,7 @@ var index = function index(req, res, next) {
 };
 
 var create = function create(req, res, next) {
-  console.log("req.session: ===========", req.session);
-  awsUpload(req.file.buffer, {path: 'path', ownerId: req.user._id}).then(function(data){
+  awsUpload(req.file.buffer, {path: '/' + req.user.userName, ownerId: req.user._id, name: req.body.name}).then(function(data){
     res.json(data);
   }).catch(function(error) {
     next(error);
