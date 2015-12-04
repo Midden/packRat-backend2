@@ -27,7 +27,7 @@ var create = function create(req, res, next) {
 
 var destroy = function destroy(req, res, next){
   var id = req.get("id");
-  Image.findByIdAndRemove({ "_id": id }, function (err, image) {
+  Image.remove({ "id": id }, function (err, image) {
     console.log("deleting single image");
       if (err) {
         return next(err);
