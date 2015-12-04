@@ -12,4 +12,6 @@ router.get('/', controller.index);
 
 router.post('/', upload.single('file'), controller.create);
 
+router.delete('/', controller.destroy);
+
 module.exports = router;

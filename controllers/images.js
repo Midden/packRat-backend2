@@ -27,14 +27,15 @@ var create = function create(req, res, next) {
 
 var destroy = function destroy(req, res, next){
   var id = req.get("id");
-  Image.remove({ "_id": id }, function (err) {
+  Image.remove({ "_id": id }, function (err, image) {
     console.log("deleting single image");
       if (err) {
         return next(err);
     } else {
-        res.json(users);
+        res.json(image);
       }
   });
+
 
   // Image.findById(req.image._id).exec().then(function(image){
   //   // res.remove(image)
@@ -50,6 +51,7 @@ var destroy = function destroy(req, res, next){
 
 module.exports = {
   index,
-  create
+  create,
+  destroy
 };
 
