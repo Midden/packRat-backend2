@@ -60,7 +60,7 @@ app.use(session({
     url : "mongodb://localhost/ga-passport-sessions"
   }),
   cookie : {
-    maxAge : 300000 // 5 minutes
+    maxAge : 900000 // 15 minutes
   },
   genid : function() {
     return uuid.v4({
