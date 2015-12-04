@@ -7,6 +7,7 @@ var Image = require('../models/image');
 var awsUpload = require('../lib/aws-upload');
 var fileUpload = require('../lib/file-upload');
 var User = require('../controllers/auth.js');
+
 var index = function index(req, res, next) {
 
     Image.find({}, {__v: 0}).exec().then(function(images) {
@@ -23,6 +24,29 @@ var create = function create(req, res, next) {
     next(error);
   });
 };
+
+var destroy = function destroy(req, res, next){
+  var id = req.get("id");
+  Image.remove({ "_id": id }, function (err) {
+    console.log("deleting single image");
+      if (err) {
+        return next(err);
+    } else {
+        res.json(users);
+      }
+  });
+
+  // Image.findById(req.image._id).exec().then(function(image){
+  //   // res.remove(image)
+  //   return image.remove();
+  // }).catch(function(error) {
+  //   next(error);
+  // };
+};
+
+// var show = function show(req, res, next) {
+//   Image.find()
+// };
 
 module.exports = {
   index,
