@@ -17,11 +17,30 @@ var index = function index(req, res, next) {
   });
 };
 
+var show = function index(req, res, next) {
+    Image.find({ "_id": req.body.id }, {__v: 0}).exec().then(function(images) {
+    res.json(images);
+  }).catch(function(error) {
+    next(error);
+  });
+};
+
 var create = function create(req, res, next) {
   awsUpload(req.file.buffer, {path: '/' + req.user.userName, ownerId: req.user._id, name: req.body.name}).then(function(data){
     res.json(data);
   }).catch(function(error) {
     next(error);
+  });
+};
+
+var destroyOne = function(req, res, next) {
+  image.remove({ "id": req.body._id }, function (err, image) {
+    console.log("deleting single image");
+      if (err) {
+        return next(err);
+    } else {
+        res.render("File Deleted");
+      }
   });
 };
 
@@ -35,7 +54,7 @@ var destroy = function destroy(req, res, next){
         res.json(image);
       }
   });
-
+};
 
   // Image.findById(req.image._id).exec().then(function(image){
   //   // res.remove(image)
@@ -43,7 +62,6 @@ var destroy = function destroy(req, res, next){
   // }).catch(function(error) {
   //   next(error);
   // };
-};
 
 // var show = function show(req, res, next) {
 //   Image.find()
@@ -52,6 +70,7 @@ var destroy = function destroy(req, res, next){
 module.exports = {
   index,
   create,
+  destroyOne,
   destroy
 };
 

@@ -1,3 +1,5 @@
+//jshint node:true
+
 'use strict';
 
 var express = require('express');
@@ -10,8 +12,14 @@ var upload = multer({ storage: storage });
 
 router.get('/', controller.index);
 
+// router.get('/:id', controller.show);
+
 router.post('/', upload.single('file'), controller.create);
 
+router.delete('/:_id', controller.destroyOne);
+
 router.delete('/', controller.destroy);
+
+
 
 module.exports = router;
