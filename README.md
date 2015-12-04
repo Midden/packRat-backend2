@@ -1,10 +1,7 @@
 .
-The README.md file inside your back-end repo should have:
-A short description of your application.
-A catalog of routes (paths and methods) that the API expects.
-A link to the deployed back-end app.
-About
-packRat is a file storage app. Given the flexible storage options of Mongodb, the behavior of these furry little critters, seems to reflect the flexibility of document attributes. Packrats, also called woodrats, build complex houses or dens made of twigs, cactus joints, and other materials. These contain several nest chambers, food caches, and debris piles.  These debris piles are called Middens, and have been know to preserve materials gathered by the packrats for 50, 000. Packrats also like shiny things and will drop whatever they are carrying for something that they like better.  
+
+#packRat is a file storage app. 
+Given the flexible storage options of Mongodb, the behavior of these furry little critters, seems to reflect the flexibility of document attributes. Packrats, also called woodrats, build complex houses or dens made of twigs, cactus joints, and other materials. These contain several nest chambers, food caches, and debris piles.  These debris piles are called Middens, and have been know to preserve materials gathered by the packrats for 50, 000. Packrats also like shiny things and will drop whatever they are carrying for something that they like better.  
 
 #User Stories: 
 The following user stories should be considered our “Active User Stories”, with notes and the group’s plan of execution.
@@ -65,4 +62,15 @@ Express App handles the functionality/interpretation of query meoths of the stuf
 
 
 
-# link to the repo for your front-end. 
+https://github.com/Midden/packRat-frontend
+
+resources Scott, Dave, Lena
+you need to NPM install
+use express multer
+use express passport
+
+readMe checklist: The README.md file inside your back-end repo should have:
+A short description of your application.
+A catalog of routes (paths and methods) that the API expects.
+A link to the deployed back-end app.
+About
