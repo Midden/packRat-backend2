@@ -51,23 +51,23 @@ As a User, I am the only person who can upload or edit my files
 As a User, I can decide what files are public and private - he said not to even try file sharing between accounts, if anything, we can set-up multiple users for an account, so data is “sharable” within an account.
 As a User, I can search for files with the tags? title? keyword?
 
-Project planning notes and related documents.  
-#Wednesday Pre-project week meeting with Antony game plan notes:
+#Project planning notes and related documents.  
+Wednesday Pre-project week meeting with Instructor game plan notes:
 Yesterday’s multer lesson should be our framework for the express app...he’s happy to help us refactor a few things...Materialized Paths are the way to go for setting up queries...he’s written materialized paths in Postgresql, and he said he’d help us step through it, once we get to the point where we are writing query commands.
 
-#Suggested problem to solve first:
-create the bones of the app...express...mongo etc...
-Create user account
-create-creating a directory -materialized paths
-create-uploading a file in the directory -materialized paths
-read-querying for that file -materialized paths
-delete-removing the file from directory -we need to set up AWS permissions a little differently than his example -  we need to add a remove permission.
-create-creating another directory
-Update - moving a file from the first directory into that directory…
-update-renaming directories/files
- read-creating a directory within a directory and searching for documents within that directory from the root.
+#Suggested problem to solve first:  Last Updated Sunday, December 6th, 3:30pm.
+DONE - Create the bones of the app...express...mongo etc...
+DONE -Create user account
+NO DIRCETORY NEEDED - create-creating a directory -materialized paths
+DONE -Creating and uploading a file referenced and accessibly by userName -materialized paths
+DONE -read-querying for that file -materialized paths
+DONE -delete-removing the file from directory -we need to set up AWS permissions a little differently than his example -  we need to add a remove permission.
+REACH GOAL-create-creating another directory
+REACH GOAL- Update - moving a file from the first directory into that directory…
+NEED-update-renaming directories/files
+ REACH GOALread-creating a directory within a directory and searching for documents within that directory from the root.
 multiple users on one account.
- delete-remove whole directories - he suggested this to be last, because it involves a lot more manipulation with AWS and it make our db messy, so get the thing working and then make it messy.
+ DONE-delete-remove whole directories - he suggested this to be last, because it involves a lot more manipulation with AWS and it make our db messy, so get the thing working and then make it messy.
 
 #How the parts work together
 Express App handles the functionality/interpretation of query meoths of the stuff coming from and going to database - MongoDB stores descriptions/details/structure for files that are actually being stored in AWS.  ---- We only get 5GB of storage on AWS, so we can’t store big sample data...even though MongoDB can handle documents up to 16GB size...might be worth commenting about in readME.
