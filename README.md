@@ -78,7 +78,7 @@ Action Plan for Workflow
 MongoDB Structure
 ![materialized paths](https://cloud.githubusercontent.com/assets/14185415/11615346/1b757586-9c2c-11e5-99a0-1da34205379d.jpg)
 
-https://github.com/Midden/packRat-frontend
+
 
 #resources Meng Scott, Dave, Lena
 Dependencies/Modules/Middleware
@@ -119,8 +119,7 @@ Dependencies/Modules/Middleware
   "devDependencies": {
     "errorhandler": "^1.4.2"
 
-readMe checklist: The README.md file inside your back-end repo should have:
-A short description of your application.
+
 A catalog of routes (paths and methods) that the API expects.
-A link to the deployed back-end app.
-About
+
+Front End Reop https://github.com/Midden/packRat-frontend
