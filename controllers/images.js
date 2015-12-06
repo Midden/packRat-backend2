@@ -40,25 +40,7 @@ var update = function update(req, res, next) {
     console.log(image);
     image.save();
   });
-  // Image.update({"_id": req.body.imageid}, {$set: {name: req.body.newfilename}}, function(images) {
-  //   console.log(images);
-    // images.save();
 };
-
-
-  // Image.update({"_id": req.body.imageid}, {$set: {name: req.body.newname}}, {new: true}, {multi: false}, ).exec().then(function(image) {
-  //   console.log(image);
-  // });
-  // };
-
-// var update = function(id, field, value) {
-//   var modify = {};
-//   modify[field] = value;
-//   Person.findByIdAndUpdate(id, { $set: modify }, { new: true }).exec().then(function(person) {
-//     console.log(person.toJSON());
-//   }).catch(console.error
-//   ).then(done);
-// };
 
 var destroyOneFromUser = function patch(req, res, next) {
   // userFiles = [id1, id2, id3 ...]

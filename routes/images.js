@@ -23,7 +23,7 @@ router.patch('/deleteone', controller.destroyOneFromUser);
 
 router.delete('/deleteone', controller.destroyOneFromDb);
 
-//router.delete('/', controller.destroy);
+router.delete('/', controller.destroy);
 
 
 
