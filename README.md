@@ -80,10 +80,44 @@ MongoDB Structure
 
 https://github.com/Midden/packRat-frontend
 
-resources Scott, Dave, Lena
-you need to NPM install
-use express multer
-use express passport
+#resources Meng Scott, Dave, Lena
+Dependencies/Modules/Middleware
+
+   NPM INSTALL
+   Modules:
+   Mongoose
+   Multer
+   AWS-SDK
+   Passport
+   Express and other's listed below:
+   
+ 
+  "dependencies": 
+    "aws-sdk": "^2.2.19",
+    "bcrypt": "^0.8.5",
+    "body-parser": "~1.13.2",
+    "cat-names": "^1.0.2", (This was a reach goal for a fun way to generate userNames)
+    "connect-mongo": "^0.8.2",
+    "cookie-parser": "~1.3.5",
+    "cors": "^2.7.1",
+    "debug": "~2.2.0",
+    "dotenv": "^1.2.0",
+    "express": "~4.13.1",
+    "express-session": "^1.12.1",
+    "file-type": "^3.3.0",
+    "hbs": "~3.1.0",
+    "mongoose": "^4.2.8",
+    "mongoose-unique-validator": "^0.6.1",
+    "morgan": "~1.6.1",
+    "multer": "^1.1.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "s3": "^4.4.0",
+    "serve-favicon": "~2.3.0",
+    "uuid": "^2.0.1"
+  
+  "devDependencies": {
+    "errorhandler": "^1.4.2"
 
 readMe checklist: The README.md file inside your back-end repo should have:
 A short description of your application.
