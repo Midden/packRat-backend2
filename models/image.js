@@ -7,11 +7,11 @@ var OwnerId = mongoose.Schema.Types.ObjectId;
 var imageSchema = new mongoose.Schema({
   url: {
     type: String,
-    required: true
+    // required: true
   },
   path: {
     type: String,
-    required: true
+    // required: true
   },
   ownerId: {
     type: OwnerId,

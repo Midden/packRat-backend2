@@ -15,13 +15,13 @@ var index = function index(req, res, next) {
   });
 };
 
-var show = function index(req, res, next) {
-    Image.findById({ "_id": req.body.id }, {__v: 0}).exec().then(function(images) {
-    res.json(images);
-  }).catch(function(error) {
-    next(error);
-  });
-};
+// var show = function index(req, res, next) {
+//     Image.findById({ "_id": req.body.id }, {__v: 0}).exec().then(function(images) {
+//     res.json(images);
+//   }).catch(function(error) {
+//     next(error);
+//   });
+// };
 
 var create = function create(req, res, next) {
   awsUpload(req.file.buffer, {path: '/' + req.user.userName + '/' + req.body.name, ownerId: req.user._id, name: req.body.name}).then(function(data){
@@ -33,6 +33,32 @@ var create = function create(req, res, next) {
     next(error);
   });
 };
+
+var update = function update(req, res, next) {
+  console.log(req.body.imageid, req.body.newfilename);
+  Image.findByIdAndUpdate(req.body.imageid, {$set: {name: req.body.newfilename}}, {new: true}).exec().then(function(image) {
+    console.log(image);
+    image.save();
+  });
+  // Image.update({"_id": req.body.imageid}, {$set: {name: req.body.newfilename}}, function(images) {
+  //   console.log(images);
+    // images.save();
+};
+
+
+  // Image.update({"_id": req.body.imageid}, {$set: {name: req.body.newname}}, {new: true}, {multi: false}, ).exec().then(function(image) {
+  //   console.log(image);
+  // });
+  // };
+
+// var update = function(id, field, value) {
+//   var modify = {};
+//   modify[field] = value;
+//   Person.findByIdAndUpdate(id, { $set: modify }, { new: true }).exec().then(function(person) {
+//     console.log(person.toJSON());
+//   }).catch(console.error
+//   ).then(done);
+// };
 
 var destroyOneFromUser = function patch(req, res, next) {
   // userFiles = [id1, id2, id3 ...]
@@ -46,21 +72,12 @@ var destroyOneFromUser = function patch(req, res, next) {
 
 };
 
-
-
 // should be delete single image, will get to after PATCH userFiles arary
 var destroyOneFromDb = function destroyOneFromDb(req, res, next){
   console.log(req.body.onefile);
   Image.remove({"_id": req.body.onefile}).exec().then(function(images) {
     console.log(images);
   });
-// Image.findByIdAndRemove({_id: req.image._id}).exec().then(function(err) {
-//       if (err) {
-//         return next(err);
-//       } else {
-//         res.json("File deleted");
-//       }
-//   });
 };
 
 var destroy = function destroy(req, res, next){
@@ -78,6 +95,7 @@ var destroy = function destroy(req, res, next){
 module.exports = {
   index,
   create,
+  update,
   destroyOneFromUser,
   destroyOneFromDb,
   destroy

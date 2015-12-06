@@ -15,9 +15,9 @@ router.get('/', controller.index);
 
 // router.get('/' + image.path, controller.show);
 
-// localhost:5000/images?user=xxx&image=xxx
-
 router.post('/', upload.single('file'), controller.create);
+
+router.patch('/file', controller.update);
 
 router.patch('/deleteone', controller.destroyOneFromUser);
 
