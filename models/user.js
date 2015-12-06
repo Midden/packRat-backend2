@@ -14,7 +14,11 @@ var userSchema = new Schema({
     unique : true,
     required : true
   },
-  passwordDigest : String
+  passwordDigest : String,
+  userFiles: {
+    type: [mongoose.Schema.Types.ObjectId],
+    ref: 'Image'
+  }
 });
 
 userSchema.plugin(uniqueValidator);
@@ -67,9 +71,11 @@ userSchema.methods.setPassword = function(password) {
   return returnedPromise;
 };
 
+
+
 module.exports = userSchema;
 
 
-userSchema.methods.createS3folder = function() {
-//create s3 folder
-};
+// userSchema.methods.createS3folder = function() {
+// //create s3 folder
+// };

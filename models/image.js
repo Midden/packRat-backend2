@@ -18,7 +18,12 @@ var imageSchema = new mongoose.Schema({
     ref: "User"
   },
   name: {
-    type: String
+    type: String,
+    unique: true
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
   }
 });
 
