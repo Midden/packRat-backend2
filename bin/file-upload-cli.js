@@ -1,5 +1,4 @@
 //jshint node:true
-
 'use strict';
 
 var fileUpload = require('./lib/file-upload.js');
@@ -26,6 +25,3 @@ fileUpload(caption, buffer, function(err, image) {
   }
   console.log(image);
 });
-
-
-//> ~/Documents/WDI/Midden/packRat-backend2 (models)$ node file-upload-cli.js "hello" five.jpg

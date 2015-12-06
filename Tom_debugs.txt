@@ -1,0 +1,281 @@
+
+
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ ls
+LICENSE			file-upload-cli.js	package.json
+README.md		five.jpg		public
+app.js			lib			routes
+aws-upload-cli.js	models			test
+bin			node_modules		views
+controllers		packRat-backend@0.0.0
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:51
+var newDir = new Directory({name: 'tom'});
+                 ^
+
+ReferenceError: Directory is not defined
+    at Object.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:51:18)
+    at Module._compile (module.js:434:26)
+    at Object.Module._extensions..js (module.js:452:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:475:10)
+    at startup (node.js:117:18)
+    at node.js:951:3
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f236c6b0ded2acb86fb9e, name: 'tom' }
+
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f24806449d048cc7b4cee, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f25dba72be64ecded82cd, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: ERROR!!!! = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2723fdcc172ece3476d7, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:30
+            throw err;
+            ^
+
+TypeError: Cannot read property 'inspect' of undefined
+    at ManagedUpload.callback (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:28:65)
+    at Response.finishSinglePart (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/s3/managed_upload.js:560:28)
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:353:18)
+    at Request.callListeners (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:595:14)
+    at Request.transition (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:21:10)
+    at AcceptorStateMachine.runTo (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:37:9)
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:597:12)
+    at Request.callListeners (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:595:14)
+    at Request.transition (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:21:10)
+    at AcceptorStateMachine.runTo (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:14:12)
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f27451c9da754cefe87bb, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb error = undefined
+createAWSdirectory: ERROR!!!! = undefined
+
+
+
+
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f27796cb37070ce7a4d82, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb error = undefined
+createAWSdirectory: ERROR!!!! = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2799a368cc8fce6eac48, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb error = undefined
+createAWSdirectory: ERROR!!!! = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f27c54024caadced1ea6e, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:30
+            throw err;
+            ^
+
+TypeError: Cannot read property 'inspect' of undefined
+    at ManagedUpload.callback (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:28:65)
+    at Response.finishSinglePart (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/s3/managed_upload.js:560:28)
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:353:18)
+    at Request.callListeners (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:595:14)
+    at Request.transition (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:21:10)
+    at AcceptorStateMachine.runTo (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:37:9)
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:597:12)
+    at Request.callListeners (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:595:14)
+    at Request.transition (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:21:10)
+    at AcceptorStateMachine.runTo (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:14:12)
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f27d55add25cccedd9a4c, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: upload cb error = undefined
+createAWSdirectory: ERROR!!!! = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f283deea3e90bcffb4d3e, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: upload cb error = undefined
+createAWSdirectory: ERROR!!!! = undefined
+^[[A^A^K^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2a09bb1c6c33d05bf570, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: upload cb error = undefined
+createAWSdirectory: ERROR!!!! = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2ae7f937cee0d0b74d5a, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = [object Object]
+/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:30
+            throw err;
+            ^
+
+TypeError: Cannot read property 'inspect' of null
+    at Response.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:42:65)
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:353:18)
+    at Request.callListeners (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:595:14)
+    at Request.transition (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:21:10)
+    at AcceptorStateMachine.runTo (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:37:9)
+    at Request.<anonymous> (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:597:12)
+    at Request.callListeners (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:595:14)
+    at Request.transition (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/request.js:21:10)
+    at AcceptorStateMachine.runTo (/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/node_modules/aws-sdk/lib/state_machine.js:26:10
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2b12e4213701d1ee1b9c, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = [object Object]
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2b2ef788ef1cd147d7ba, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2b54de9a3c3ad1509778, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2b8a9db73c63d1253837, name: 'tom' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2baa55c04e80d186c5fe, name: 'fred' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2c193c4656c5d1505a60, name: 'fred' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2c9a0a556524d2f97e21, name: 'newDirectory1' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2da7531375d1d2a8fe6a, name: 'newDirectory3' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: upload cb data = undefined
+createAWSdirectory: resolved data = undefined
+^C
+~/Documents/WDI/Midden/packRat-backend2 (models)$ 
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+/Users/BuddySystem/Documents/WDI/Midden/packRat-backend2/models/directory.js:31
+            Key: dName;
+                      ^
+
+SyntaxError: Unexpected token ;
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:413:25)
+    at Object.Module._extensions..js (module.js:452:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:475:10)
+    at startup (node.js:117:18)
+    at node.js:951:3
+~/Documents/WDI/Midden/packRat-backend2 (models)$ node models/directory.js 
+newDir is  { _id: 565f2e271ae7673dd3e986e8, name: 'newDirectory4' }
+createAWSdirectory: start
+createAWSdirectory: start upload
+createAWSdirectory: putObject result = undefined
+createAWSdirectory: resolved data = undefined
+

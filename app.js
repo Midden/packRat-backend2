@@ -1,3 +1,7 @@
+var db = require('./lib/db');
+
+var util = require('util');
+
 var express = require('express');
 var mongoose = require('mongoose');
 var path = require('path');
@@ -9,6 +13,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var errorhandler = require('errorhandler');
+var filetype = require('file-type');
 
 var MongoStore = require('connect-mongo')(session);
 process.env.SESSION_SECRET || require('dotenv').load();
@@ -18,7 +23,8 @@ var passport = require('./lib/passport');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-// var images = require('./routes/images');
+var images = require('./routes/images');
+// var directories = require('./routes/')
 
 var app = express();
 
@@ -26,19 +32,26 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+//For file upload
+var uploadBaseUrl = function (req) {
+  return util.format('%s://%s:%s/images',
+    req.protocol,
+    req.hostname,
+    app.get ('port'));
+};
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
 app.use(cors({
-  origin: ['http://localhost:5000'],
+  origin: /github\.io/,
   credentials: true
 }));
-app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cookieParser('secret'));
-// app.use(cookieSession());
-app.use(express.static(path.join(__dirname, 'public')));
 
+
+//app.use(express.static(path.join(__dirname, 'public'), { index: false }));
 app.use(session({
   secret : process.env.SESSION_SECRET,
   resave : false,
@@ -47,7 +60,7 @@ app.use(session({
     url : "mongodb://localhost/ga-passport-sessions"
   }),
   cookie : {
-    maxAge : 300000 // 5 minutes
+    maxAge : 900000 // 15 minutes
   },
   genid : function() {
     return uuid.v4({
@@ -62,9 +75,12 @@ app.use(passport.initialize());
 // mount return value of `passport.session` invocation on `app`
 app.use(passport.session());
 
+
+//app.use('/', require('./routes/root'));
+//app.use('/images', require('./routes/images'));
 app.use('/', routes);
 app.use('/users', users);
-// app.use('/images', image);
+app.use('/images', images);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -77,14 +93,15 @@ app.use(function(req, res, next) {
 
 // development error handler
 // will print stacktrace
-if (app.get('env') === 'development') {
+if (true || app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
+    res.status(status).json(obj);
+    //res.json('error', {
+     // message: err.message,
+    //  error: err
     });
-  });
+ // });
 }
 
 // production error handler
