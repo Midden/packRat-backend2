@@ -19,7 +19,9 @@ router.get('/', controller.index);
 
 router.post('/', upload.single('file'), controller.create);
 
-router.patch('/deleteone', controller.destroyOne);
+router.patch('/deleteone', controller.destroyOneFromUser);
+
+router.delete('/deleteone', controller.destroyOneFromDb);
 
 //router.delete('/', controller.destroy);
 

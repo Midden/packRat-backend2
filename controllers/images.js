@@ -34,7 +34,7 @@ var create = function create(req, res, next) {
   });
 };
 
-var destroyOne = function patch(req, res, next) {
+var destroyOneFromUser = function patch(req, res, next) {
   // userFiles = [id1, id2, id3 ...]
   // userFiles.splice(1, id2) => [id1,id3]
   console.log(req.user.userFiles);
@@ -43,9 +43,17 @@ var destroyOne = function patch(req, res, next) {
   console.log(req.user.userFiles);
 
   req.user.save();
+
 };
 
+
+
 // should be delete single image, will get to after PATCH userFiles arary
+var destroyOneFromDb = function destroyOneFromDb(req, res, next){
+  console.log(req.body.onefile);
+  Image.remove({"_id": req.body.onefile}).exec().then(function(images) {
+    console.log(images);
+  });
 // Image.findByIdAndRemove({_id: req.image._id}).exec().then(function(err) {
 //       if (err) {
 //         return next(err);
@@ -53,6 +61,7 @@ var destroyOne = function patch(req, res, next) {
 //         res.json("File deleted");
 //       }
 //   });
+};
 
 var destroy = function destroy(req, res, next){
   var id = req.get("id");
@@ -69,7 +78,8 @@ var destroy = function destroy(req, res, next){
 module.exports = {
   index,
   create,
-  destroyOne,
+  destroyOneFromUser,
+  destroyOneFromDb,
   destroy
 };
 
