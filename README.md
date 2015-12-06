@@ -51,7 +51,7 @@ As a User, I am the only person who can upload or edit my files
 As a User, I can decide what files are public and private - he said not to even try file sharing between accounts, if anything, we can set-up multiple users for an account, so data is “sharable” within an account.
 As a User, I can search for files with the tags? title? keyword?
 
-
+Project planning notes and related documents.  
 #Wednesday Pre-project week meeting with Antony game plan notes:
 Yesterday’s multer lesson should be our framework for the express app...he’s happy to help us refactor a few things...Materialized Paths are the way to go for setting up queries...he’s written materialized paths in Postgresql, and he said he’d help us step through it, once we get to the point where we are writing query commands.
 
@@ -72,7 +72,11 @@ multiple users on one account.
 #How the parts work together
 Express App handles the functionality/interpretation of query meoths of the stuff coming from and going to database - MongoDB stores descriptions/details/structure for files that are actually being stored in AWS.  ---- We only get 5GB of storage on AWS, so we can’t store big sample data...even though MongoDB can handle documents up to 16GB size...might be worth commenting about in readME.
 
+Action Plan for Workflow
+[FileBucket.pdf](https://github.com/Midden/packRat-frontend/files/53267/FileBucket.pdf)
 
+MongoDB Structure
+![materialized paths](https://cloud.githubusercontent.com/assets/14185415/11615346/1b757586-9c2c-11e5-99a0-1da34205379d.jpg)
 
 https://github.com/Midden/packRat-frontend
 
