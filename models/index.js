@@ -5,6 +5,7 @@
 
 var mongoose = require('mongoose');
 mongoose.Promise = Promise;
+mongoose.connect(process.env.MONGOLAB_URI);
 
 mongoose.model('User', require('../models/user'));
 
