@@ -55,7 +55,7 @@ As a User, I can search for files with the tags? title? keyword?
 Wednesday Pre-project week meeting with Instructor game plan notes:
 Yesterday’s multer lesson should be our framework for the express app...he’s happy to help us refactor a few things...Materialized Paths are the way to go for setting up queries...he’s written materialized paths in Postgresql, and he said he’d help us step through it, once we get to the point where we are writing query commands.
 
-#Suggested problem to solve first:  Last Updated Sunday, December 6th, 3:30pm.
+#Suggested problem to solve first:  Last Updated Sunday, December 6th, 5:30pm.
 
 DONE - Create the bones of the app...express...mongo etc...
 
@@ -71,9 +71,11 @@ REACH GOAL-create-creating another directory
 REACH GOAL- Update - moving a file from the first directory into that directory…
 
 DONE-update-renaming directories/files
- REACH GOALread-creating a directory within a directory and searching for documents within that directory from the root.
+
+REACH GOAL-read-creating a directory within a directory and searching for documents within that directory from the root.
 multiple users on one account.
- DONE-delete-remove whole directories - he suggested this to be last, because it involves a lot more manipulation with AWS and it make our db messy, so get the thing working and then make it messy.
+
+DONE-delete-remove whole directories - he suggested this to be last, because it involves a lot more manipulation with AWS and it make our db messy, so get the thing working and then make it messy.
 
 #How the parts work together
 Express App handles the functionality/interpretation of query meoths of the stuff coming from and going to database - MongoDB stores descriptions/details/structure for files that are actually being stored in AWS.  ---- We only get 5GB of storage on AWS, so we can’t store big sample data...even though MongoDB can handle documents up to 16GB size...might be worth commenting about in readME.
