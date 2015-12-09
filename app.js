@@ -44,7 +44,7 @@ var uploadBaseUrl = function (req) {
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(cors({
-  origin: /github\.io/,
+  origin: ['http://localhost:5000', /github\.io/],
   credentials: true
 }));
 app.use(bodyParser.json());
